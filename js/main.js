@@ -15,7 +15,7 @@ function btnCalcHandler(e) {
     e.preventDefault();
     let firstNum = document.querySelector('#first-number');
     let secondNum = document.querySelector('#second-number');
-    let result = sum(Number(firstNum.value), Number(secondNum.value));
+    let result = +sum(Number(firstNum.value), Number(secondNum.value)).toFixed(10);
     outputReslutInPopup(result)
 }
 
